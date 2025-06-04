@@ -1,0 +1,915 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Nav Bar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.brand-name {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b88e2f;
+}
+
+.icons {
+  display: flex;
+  gap: 32px;
+}
+
+.icon {
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #b88e2f;
+}
+
+/* Hero Banner Container */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero-banner__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-banner__content {
+  position: absolute;
+  top: 55%;
+  right: 3%;
+  transform: translateY(-50%);
+  background-color: #fff3e3;
+  padding: 40px;
+  max-width: 580px;
+
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.hero-banner__subtitle {
+  color: #333;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.hero-banner__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #b88e2f;
+  margin-bottom: 20px;
+}
+
+.hero-banner__text {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.hero-banner__button {
+  background-color: #b88e2f;
+  color: white;
+  padding: 12px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+  height: 50px;
+  width: 30%;
+}
+
+.hero-banner__button:hover {
+  background-color: #a17e2a;
+}
+
+/* browse-range */
+.browse-range h1 {
+  text-align: center;
+  display: block;
+  padding-top: 40px;
+}
+
+.browse-range h1 {
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+}
+
+.range-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 40px 90px;
+}
+
+.range-card {
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.range-card:hover {
+  transform: translateY(-5px);
+}
+
+.range-card img {
+  width: 350px;
+  height: 450px;
+  border-radius: 6px;
+  border: none;
+  align-items: center;
+}
+
+.range-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* products-section */
+.products-section {
+  text-align: center;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.product-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 10px 90px;
+}
+
+.show-more-btn {
+  margin-top: 1.5rem;
+}
+
+.show-more-btn button {
+  padding: 0.75rem 3rem;
+  background-color: white;
+  border: 1px solid #d4a373;
+  color: #d4a373;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.show-more-btn button:hover {
+  background-color: #d4a373;
+  color: white;
+}
+
+/* inspiration-section */
+.inspiration-section {
+  display: flex;
+  padding: 4rem 6rem;
+  background-color: #fff6ec;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/* Left Text Column */
+.inspiration-text {
+  flex: 1;
+  max-width: 400px;
+}
+
+.inspiration-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 1rem;
+}
+
+.inspiration-text p {
+  color: #555;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.explore-btn {
+  background-color: #d6a354;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #d4a373;
+  color: #000000;
+}
+
+/* Right Image Row */
+.inspiration-images {
+  flex: 2;
+  display: flex;
+  overflow: hidden;
+  gap: 1.5rem;
+}
+
+/* Each image container */
+.image-card {
+  position: relative;
+  min-width: 280px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay on first image */
+.featured .overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay-text span {
+  font-size: 0.75rem;
+  color: #777;
+  display: block;
+}
+
+.overlay-text h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.2rem 0;
+  color: #2d2d2d;
+}
+
+/* Right arrow button */
+.arrow-btn {
+  background-color: #d6a354;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* Dot container */
+.dot-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 1.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #d6a354;
+}
+
+/* Funiro Furniture */
+.funiro-furniture p {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.funiro-furniture h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.furniture-cards {
+  column-count: 4;
+  column-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.furniture-cards div {
+  margin-bottom: 20px;
+  background-color: white;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.furniture-cards div:hover {
+  transform: scale(1.03);
+}
+
+.furniture-cards img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* line */
+.line {
+  margin-top: 50px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #fff;
+  font-family: "Arial", sans-serif;
+  border-top: 1px solid #eee;
+  position: relative;
+}
+
+.footer-section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.footer-section1 .para {
+  color: #999;
+  margin: 40px 0;
+}
+
+.footer-section p {
+  color: #000000;
+  margin: 30px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-section p:hover {
+  color: #d4a373;
+}
+
+.footer-section .section-title {
+  color: #aaa;
+  font-weight: bold;
+  margin-bottom: 50px;
+  cursor: default;
+}
+
+.footer-section.newsletter input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  font-size: 14px;
+  outline: none;
+  width: 200px;
+}
+
+.footer-section.newsletter button {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+
+.footer-section.newsletter button:hover {
+  color: #d4a373;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: left;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  color: #444;
+  font-size: 13px;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* Desktop and Large Tablets (769px to 1199px) */
+@media (max-width: 1199px) {
+  .navbar {
+    padding: 0px 30px;
+  }
+
+  .hero-banner__content {
+    max-width: 450px;
+    padding: 30px;
+  }
+
+  .hero-banner__title {
+    font-size: 28px;
+  }
+
+  .range-cards {
+    margin: 40px 60px;
+  }
+
+  .range-card img {
+    width: 300px;
+    height: 380px;
+  }
+
+  .product-images {
+    margin: 10px 60px;
+  }
+
+  .inspiration-section {
+    padding: 3rem 4rem;
+  }
+
+  .furniture-cards {
+    column-count: 3;
+  }
+}
+
+/* Tablets (768px to 900px) */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0px 20px;
+  }
+
+  .brand-name {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    gap: 30px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .icons {
+    gap: 20px;
+  }
+
+  .hero-banner__content {
+    top: 50%;
+    right: 5%;
+    max-width: 350px;
+    padding: 25px;
+  }
+
+  .hero-banner__title {
+    font-size: 24px;
+  }
+
+  .hero-banner__text {
+    font-size: 13px;
+  }
+
+  .hero-banner__button {
+    width: 40%;
+    font-size: 12px;
+  }
+
+  .range-cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 40px 40px;
+    gap: 20px;
+  }
+
+  .range-card img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+  }
+
+  .product-images {
+    margin: 10px 40px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .inspiration-section {
+    flex-direction: column;
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+
+  .inspiration-text {
+    max-width: 100%;
+  }
+
+  .inspiration-images {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .image-card {
+    min-width: 250px;
+    height: 350px;
+  }
+
+  .furniture-cards {
+    column-count: 2;
+  }
+
+  .footer {
+    padding: 30px 20px;
+  }
+}
+
+/* Small Tablets and Large Phones (481px to 767px) */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0px 15px;
+    height: 70px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar-brand {
+    order: 1;
+  }
+
+  .nav-links {
+    order: 2;
+    gap: 20px;
+  }
+
+  .icons {
+    order: 3;
+    gap: 15px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+
+  .hero-banner__content {
+    position: static;
+    transform: none;
+    max-width: 100%;
+    margin: 20px;
+    border-radius: 5px;
+  }
+
+  .hero-banner__title {
+    font-size: 20px;
+  }
+
+  .hero-banner__button {
+    width: 50%;
+  }
+
+  .browse-range h1 {
+    font-size: 24px;
+    padding-top: 30px;
+  }
+
+  .range-cards {
+    grid-template-columns: 1fr;
+    margin: 30px 20px;
+    gap: 30px;
+  }
+
+  .range-card img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .product-images {
+    margin: 10px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .inspiration-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .inspiration-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .image-card {
+    min-width: 200px;
+    height: 280px;
+  }
+
+  .funiro-furniture h2 {
+    font-size: 24px;
+  }
+
+  .funiro-furniture p {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .furniture-cards {
+    column-count: 1;
+    padding: 0 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px 15px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section.newsletter input[type="email"] {
+    width: 150px;
+  }
+}
+
+/* Mobile Phones (320px to 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    height: 80px;
+    padding: 10px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .hero-banner__content {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .hero-banner__title {
+    font-size: 18px;
+  }
+
+  .hero-banner__text {
+    font-size: 12px;
+  }
+
+  .hero-banner__button {
+    width: 60%;
+    font-size: 11px;
+    padding: 10px 15px;
+  }
+
+  .browse-range h1 {
+    font-size: 20px;
+  }
+
+  .range-cards {
+    margin: 20px 15px;
+    gap: 20px;
+  }
+
+  .range-card img {
+    height: 250px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .product-images {
+    margin: 10px 15px;
+  }
+
+  .show-more-btn button {
+    padding: 0.5rem 2rem;
+    font-size: 12px;
+  }
+
+  .inspiration-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .inspiration-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .inspiration-text p {
+    font-size: 0.85rem;
+  }
+
+  .image-card {
+    min-width: 180px;
+    height: 240px;
+  }
+
+  .funiro-furniture h2 {
+    font-size: 20px;
+  }
+
+  .funiro-furniture p {
+    font-size: 14px;
+    margin-top: 25px;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .footer-section.newsletter input[type="email"] {
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .footer-section.newsletter button {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* Extra Small Phones (up to 319px) */
+@media (max-width: 319px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .brand-name {
+    font-size: 16px;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+  }
+
+  .hero-banner__content {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .hero-banner__title {
+    font-size: 16px;
+  }
+
+  .hero-banner__button {
+    width: 70%;
+    font-size: 10px;
+  }
+
+  .range-cards {
+    margin: 15px 10px;
+  }
+
+  .range-card img {
+    height: 220px;
+  }
+
+  .product-images {
+    margin: 10px 10px;
+  }
+
+  .inspiration-section {
+    padding: 1rem 0.5rem;
+  }
+
+  .image-card {
+    min-width: 160px;
+    height: 220px;
+  }
+
+  .footer {
+    padding: 15px 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
