@@ -72,8 +72,8 @@
 /* Overlay Action Icons */
 .overlay-actions {
   display: flex;
-  gap: 16px;
-  font-size: 19.2px;
+  gap: 3px;
+  font-size: 15px;
 }
 
 .overlay-actions span,
