@@ -1,12 +1,77 @@
-# React + Vite
+# 🪑 Funiro Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive furniture e-commerce landing page built with **React**.  
+This project showcases a clean UI, product browsing experience, and modular component design. Inspired by a Figma UI template, it's ideal for presenting home decor or product-based websites.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## Expanding the ESLint configuration
+- 🔥 **Hero Section** – Catchy banner for latest collections  
+- 🛋️ **Browse The Range** – Highlights product categories like Dining, Living, and Bedroom  
+- 🛍️ **Dynamic Product Cards** – Reusable product component to display item info  
+- ✨ **Inspiration Section** – Beautiful room prototypes to inspire users  
+- 📸 **#FuniroFurniture** – User-generated showcase grid  
+- 📦 **Component-Based Architecture** – Reusable NavBar, Footer, ProductCard  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ **React.js** – Component-driven frontend framework  
+- 🎨 **Vanilla CSS** – Custom styles using modular CSS files  
+- 📁 **File-based Structure** – Organized folder system for easy scalability  
+
+---
+
+## 📂 Folder Structure
+
+public/
+  images/
+
+components/
+  Footer.jsx
+  NavBar.jsx
+  ProductCard.jsx
+
+pages/
+  About.jsx
+  Contact.jsx
+  Home.jsx
+  Shop.jsx
+  
+
+styles/
+  About.css
+  Contact.css
+  Footer.css
+  Home.css
+  NavBar.css
+  ProductCard.css
+  Shop.css
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up and run the project locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Mandela-Inegbedion/my-react-app.git
+
+# 2. Navigate into the project directory
+cd my-react-app
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+
+📬 Contact
+Built with ❤️ by [Mandela Inegbedion]
+📧 Email: inegbedionmandela9@email.com
+🔗 https://ecommerce-react-fawn-eta.vercel.app/
+
+
