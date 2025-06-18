@@ -953,7 +953,7 @@ body {
   padding: 0.5rem;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  order: -1; /* Ensures it appears first on mobile */
+  order: -1; 
 }
 
 .mobile-menu-toggle:hover {
@@ -1230,3 +1230,142 @@ body {
     height: 22px;
   }
 }
+
+
+
+
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #fff;
+  font-family: "Arial", sans-serif;
+  border-top: 1px solid #eee;
+  position: relative;
+}
+
+.footer-section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.footer-section1 .para {
+  color: #999;
+  margin: 40px 0;
+}
+
+.footer-section p {
+  color: #000000;
+  margin: 30px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-section p:hover {
+  color: #d4a373;
+}
+
+.footer-section .section-title {
+  color: #aaa;
+  font-weight: bold;
+  margin-bottom: 50px;
+  cursor: default;
+}
+
+.footer-section.newsletter input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  font-size: 14px;
+  outline: none;
+  width: 200px;
+}
+
+.footer-section.newsletter button {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+
+.footer-section.newsletter button:hover {
+  color: #d4a373;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: left;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  color: #444;
+  font-size: 13px;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* Tablets (768px to 900px) */
+@media (max-width: 900px) {
+  .footer {
+    padding: 30px 20px;
+  }
+}
+
+/* Small Tablets and Large Phones (481px to 767px) */
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px 15px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section.newsletter input[type="email"] {
+    width: 150px;
+  }
+}
+
+/* Mobile Phones (320px to 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .footer-section.newsletter input[type="email"] {
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .footer-section.newsletter button {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    text-align: center;
+  }
+} 
+
+/* Extra Small Phones (up to 319px) */
+@media (max-width: 319px) {
+  .footer {
+    padding: 15px 5px;
+  }
+}
+
+
