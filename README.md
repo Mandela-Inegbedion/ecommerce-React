@@ -69,7 +69,7 @@ npm install
 # 4. Start the development server
 npm run dev
 
-📬 Contact
+Contact
 Built with ❤️ by [Mandela Inegbedion]
 📧 Email: inegbedionmandela9@email.com
 🔗 https://ecommerce-react-fawn-eta.vercel.app/
