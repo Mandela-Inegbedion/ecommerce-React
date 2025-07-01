@@ -1,30 +1,30 @@
-# 🪑 Funiro Landing Page
+#  Funiro Landing Page
 
 A modern and responsive furniture e-commerce landing page built with **React**.  
 This project showcases a clean UI, product browsing experience, and modular component design. Inspired by a Figma UI template, it's ideal for presenting home decor or product-based websites.
 
 ---
 
-## 📌 Features
+##  Features
 
-- 🔥 **Hero Section** – Catchy banner for latest collections  
-- 🛋️ **Browse The Range** – Highlights product categories like Dining, Living, and Bedroom  
-- 🛍️ **Dynamic Product Cards** – Reusable product component to display item info  
-- ✨ **Inspiration Section** – Beautiful room prototypes to inspire users  
-- 📸 **#FuniroFurniture** – User-generated showcase grid  
-- 📦 **Component-Based Architecture** – Reusable NavBar, Footer, ProductCard  
-
----
-
-## 🛠️ Tech Stack
-
-- ⚛️ **React.js** – Component-driven frontend framework  
-- 🎨 **Vanilla CSS** – Custom styles using modular CSS files  
-- 📁 **File-based Structure** – Organized folder system for easy scalability  
+- **Hero Section** – Catchy banner for latest collections  
+- **Browse The Range** – Highlights product categories like Dining, Living, and Bedroom  
+- **Dynamic Product Cards** – Reusable product component to display item info  
+- **Inspiration Section** – Beautiful room prototypes to inspire users  
+- **#FuniroFurniture** – User-generated showcase grid  
+- **Component-Based Architecture** – Reusable NavBar, Footer, ProductCard  
 
 ---
 
-## 📂 Folder Structure
+## Tech Stack
+
+- **React.js** – Component-driven frontend framework  
+- **Vanilla CSS** – Custom styles using modular CSS files  
+- **File-based Structure** – Organized folder system for easy scalability  
+
+---
+
+## Folder Structure
 
 public/
   images/
@@ -52,7 +52,7 @@ styles/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to set up and run the project locally:
 
